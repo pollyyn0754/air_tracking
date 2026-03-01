@@ -61,8 +61,11 @@ class TXTSaver(FileSaver):
                                 identifier=plane_dict["identifier"],
                                 origin_country=plane_dict["origin_country"],
                                 geo_altitude=float(plane_dict["geo_altitude"]) if plane_dict["geo_altitude"] else None,
-                                velocity=float(plane_dict["velocity"]) if plane_dict["velocity"] and plane_dict[
-                                    "velocity"] != "None" else None
+                                velocity=(
+                                    float(plane_dict["velocity"])
+                                    if plane_dict["velocity"] and plane_dict["velocity"] != "None"
+                                    else None
+                                ),
                             )
                             # Преобразуем обратно в словарь для совместимости
                             data.append(plane.to_dict())

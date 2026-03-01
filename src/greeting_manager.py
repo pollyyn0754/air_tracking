@@ -13,7 +13,6 @@ class GreetingManager:
             (23, 6): "Доброй ночи",
         }
 
-
     def get_greeting(self) -> str:
         """Определяет текущее время и возвращает подходящее приветствие."""
         current_hour = datetime.now().hour

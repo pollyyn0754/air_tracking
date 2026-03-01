@@ -1,5 +1,5 @@
 import gettext
-from typing import Optional, cast, Callable
+from typing import Callable, Optional, cast
 
 import pycountry
 

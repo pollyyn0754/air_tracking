@@ -1,7 +1,9 @@
 from typing import Any, Dict, List, Optional
 
+from src.base_aeroplane import BaseAeroplane
 
-class Aeroplane:
+
+class Aeroplane(BaseAeroplane):
     """
     Класс, представляющий данные об отдельном самолете.
     Использует __slots__ для экономии памяти.
